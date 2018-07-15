@@ -1,0 +1,12 @@
+    {% assign images = headers | split:'<h2 ' %}
+
+  <ul style="overflow: hidden;text-align: start;margin-top: 10px;white-space: nowrap;text-overflow: ellipsis;margin-right: 10px;">
+    {% for image in images %}
+      {% if image contains 'id=' %}
+        {% assign imageMarkup = image | split:'">' | first | remove:'id=' | remove:'"' %}
+        {% assign name = image | split:'>'%}
+        <li style="font-size:14px; margin-left: 0px;" ><a style="padding-left: 0px; font-size:14px;" href="{{ BASE_PATH }}{{ post.url }}#{{ imageMarkup }}">{{ name[1] | remove:'</h2' }}</a></li>
+      {% endif %}
+    {% endfor %}
+  <ul>
+
