@@ -1,46 +1,25 @@
 ---
 layout: page
-title: Hello World!
+title: Jo Jo's First Blog
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+# <img src="/image/me.jpeg" class="img-circle" height="80" width="80"> Jo Jo's First Blog
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
+## About Me
 
-## Update Author Attributes
+My name is Desonte Jolivet I'm a veteran and  I've recently obtained my undergraduate degree in computer science. I've taken a large interest in functional programming and category theory. If I'm not programming in Haskell I'm trying to figure out how to bring the functional paradigm to Java. Recently I've been doing more of the latter by exploring monads in Java.
 
-In `_config.yml` remember to specify your own data:
-    
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
+## Objective
 
-The theme should reference these variables whenever needed.
-    
-## Sample Posts
+This blog is mostly for me and anyone else who may stumble upon it in the interwebs so, for now, there is no specific audience. Posts will normally be a brain dump of any ideas that wander around in my head. I will also host any long-term documentation for any projects I work on here.
 
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
-
-    $ rm -rf _posts/core-samples
-
-Here's a sample "posts list".
-
+## Recent Posts
 <ul class="posts">
   {% for post in site.posts %}
+      {% if post.categories contains "short"%}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+      {% endif %}
   {% endfor %}
 </ul>
-
-## To-Do
-
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
-
-
