@@ -1,7 +1,7 @@
 ---
 layout: post
-category : short
-description: "this is a descrioption."
+category : [desonte-jolivet, short]
+description: "Solutions to the first five Euler problems using jFunc."
 tagline: "The first five euler problems."
 ---
 
