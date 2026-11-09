@@ -47,11 +47,11 @@ This problem is broken down into three parts: finding the sum of the squares, fi
 And `go` simply combines the two functions `sqrs` and `sums` into one neat package.
 
 [Complete Code](https://github.com/drjoliv/ProjectEulerSolutions/blob/master/src/main/java/drjoliv/euler/Euler06.java) |
-<a type="button" data-toggle="collapse" data-target="#euler06" aria-expanded="false" aria-controls="euler06">
+<button type="button" class="btn btn-outline-success btn-sm answer-toggle" data-bs-toggle="collapse" data-bs-target="#euler06" aria-expanded="false" aria-controls="euler06">
 Answer
-</a>
+</button>
 <div class="collapse" id="euler06">
-  <div class="well well-sm">25164150</div>
+  <div class="answer-value">25164150</div>
 </div>
 
 <hr/>
@@ -68,11 +68,11 @@ Answer
 jFunc defines an infinite list of primes, [Numbers.primes](https://drjoliv.github.io/jfunc/drjoliv/jfunc/nums/Numbers.html#primes). Because jFuncs list type is 0-based indexed, the number 10000 is used instead of 10001.
 
 [Complete Code](https://github.com/drjoliv/ProjectEulerSolutions/blob/master/src/main/java/drjoliv/euler/Euler07.java) |
-<a type="button" data-toggle="collapse" data-target="#euler07" aria-expanded="false" aria-controls="euler07">
+<button type="button" class="btn btn-outline-success btn-sm answer-toggle" data-bs-toggle="collapse" data-bs-target="#euler07" aria-expanded="false" aria-controls="euler07">
 Answer
-</a>
+</button>
 <div class="collapse" id="euler07">
-  <div class="well well-sm">104743</div>
+  <div class="answer-value">104743</div>
 </div>
 
 <hr/>
@@ -139,11 +139,11 @@ The Function `go` is a composition of the steps from 2 to 7.
 Step 1. Is accomplished with a [Try](https://drjoliv.github.io/jfunc/drjoliv/jfunc/contorl/Try.html). A Try is used because reading the 1000 digits from a file throws a checked Exception.
 
 [Complete Code](https://github.com/drjoliv/ProjectEulerSolutions/blob/master/src/main/java/drjoliv/euler/Euler08.java) |
-<a type="button" data-toggle="collapse" data-target="#euler08" aria-expanded="false" aria-controls="euler08">
+<button type="button" class="btn btn-outline-success btn-sm answer-toggle" data-bs-toggle="collapse" data-bs-target="#euler08" aria-expanded="false" aria-controls="euler08">
 Answer
-</a>
+</button>
 <div class="collapse" id="euler08">
-  <div class="well well-sm">23514624000</div>
+  <div class="answer-value">23514624000</div>
 </div>
 
 <hr/>
@@ -177,11 +177,11 @@ The [For](https://drjoliv.github.io/jfunc/drjoliv/jfunc/data/list/FList.html#For
 Because there exits only one Pythagorean triplet where `a + b + c = 1000` we only have to return the head of the generated list.
 
 [Complete Code](https://github.com/drjoliv/ProjectEulerSolutions/blob/master/src/main/java/drjoliv/euler/Euler09.java) |
-<a type="button" data-toggle="collapse" data-target="#euler09" aria-expanded="false" aria-controls="euler09">
+<button type="button" class="btn btn-outline-success btn-sm answer-toggle" data-bs-toggle="collapse" data-bs-target="#euler09" aria-expanded="false" aria-controls="euler09">
 Answer
-</a>
+</button>
 <div class="collapse" id="euler09">
-  <div class="well well-sm">31875000</div>
+  <div class="answer-value">31875000</div>
 </div>
 
 <hr/>
@@ -198,9 +198,9 @@ Answer
 Since jFunc comes with an infinite FList of primes we only have to filter the list of all the values above 2000000, then sum the remaining values. The method [takeWhile(P1&lt;A&gt; predicate)](https://drjoliv.github.io/jfunc/drjoliv/jfunc/data/list/FList.html#takeWhile-drjoliv.jfunc.function.P1-) does the filtering and [Longs.sum](https://drjoliv.github.io/jfunc/drjoliv/jfunc/nums/Longs.html#sum-drjoliv.jfunc.data.list.FList-) sums the remaining values.
 
 [Complete Code](https://github.com/drjoliv/ProjectEulerSolutions/blob/master/src/main/java/drjoliv/euler/Euler10.java) |
-<a type="button" data-toggle="collapse" data-target="#euler10" aria-expanded="false" aria-controls="euler10">
+<button type="button" class="btn btn-outline-success btn-sm answer-toggle" data-bs-toggle="collapse" data-bs-target="#euler10" aria-expanded="false" aria-controls="euler10">
 Answer
-</a>
+</button>
 <div class="collapse" id="euler10">
-  <div class="well well-sm">142913828922</div>
+  <div class="answer-value">142913828922</div>
 </div>

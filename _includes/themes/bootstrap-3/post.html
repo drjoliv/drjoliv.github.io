@@ -3,7 +3,7 @@
 </div>
 
 <div class="row post-full">
-  <div class="col-xs-12">
+  <div class="col-12">
     <div class="date">
       <i><span>{{ page.date | date_to_long_string }}</span></i>
     </div>
@@ -12,17 +12,17 @@
     </div>
 
     <hr>
-    <ul class="pagination">
+    <ul class="pagination justify-content-between">
     {% if page.previous %}
-      <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&laquo; Previous</a></li>
+      <li class="page-item"><a class="page-link" href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&laquo; Previous</a></li>
     {% else %}
-      <li class="prev disabled"><a>&larr; Previous</a></li>
+      <li class="page-item disabled"><span class="page-link">&larr; Previous</span></li>
     {% endif %}
-      <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
+      <li class="page-item"><a class="page-link" href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
     {% if page.next %}
-      <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &raquo;</a></li>
+      <li class="page-item"><a class="page-link" href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &raquo;</a></li>
     {% else %}
-      <li class="next disabled"><a>Next &rarr;</a>
+      <li class="page-item disabled"><span class="page-link">Next &rarr;</span></li>
     {% endif %}
     </ul>
     <hr>

@@ -39,11 +39,11 @@ FList<Integer> list = range(1,999) //
 return list.foldr(Integers::add, 0);
 ```
 [Complete Code](https://github.com/drjoliv/ProjectEulerSolutions/blob/master/src/main/java/drjoliv/euler/Euler01.java) |
-<a type="button" data-toggle="collapse" data-target="#euler01" aria-expanded="false" aria-controls="euler01">
+<button type="button" class="btn btn-outline-success btn-sm answer-toggle" data-bs-toggle="collapse" data-bs-target="#euler01" aria-expanded="false" aria-controls="euler01">
 Answer
-</a>
+</button>
 <div class="collapse" id="euler01">
-  <div class="well well-sm">233168</div>
+  <div class="answer-value">233168</div>
 </div>
 
 <hr/>
@@ -62,11 +62,11 @@ return list.foldr(Integers::add,0);
 In many sequences, the next element in a sequence is determined by the previous elements in the sequence. [sequence(A a1, A a2, F2&lt;A, A, A&gt; fn)](https://drjoliv.github.io/jfunc/drjoliv/jfunc/data/list/FList.html#sequence-A-A-drjoliv.jfunc.function.F2-) follows this idea `a1` and `a2` are the first two elements of the sequence and `fn` is a function that takes the previous two elements and produces the next element. [filter(P1&lt;A&gt; predicate)](https://drjoliv.github.io/jfunc/drjoliv/jfunc/data/list/FList.html#filter-drjoliv.jfunc.function.P1-) removes any Fibnoacci numbers that are not even. [takeWhile(P1&lt;A&gt; predicate)](https://drjoliv.github.io/jfunc/drjoliv/jfunc/data/list/FList.html#takeWhile-drjoliv.jfunc.function.P1-) will take elements from the list as long as the `predicate` is true when the `predicate` is false the remaining elements in the list are  dropped. `sequence`, `filter`, and `takeWhile` all return a type of [FList](https://drjoliv.github.io/jfunc/drjoliv/jfunc/data/list/FList.html) which allows use to create fluent and readable code. On my Intel® Core™ i5-3339Y CPU @ 1.50GHz × 4, this computes in 0.076 seconds, which is fast enough for me.
 
 [Complete Code](https://github.com/drjoliv/ProjectEulerSolutions/blob/master/src/main/java/drjoliv/euler/Euler02.java) |
-<a type="button" data-toggle="collapse" data-target="#euler02" aria-expanded="false" aria-controls="euler02">
+<button type="button" class="btn btn-outline-success btn-sm answer-toggle" data-bs-toggle="collapse" data-bs-target="#euler02" aria-expanded="false" aria-controls="euler02">
 Answer
-</a>
+</button>
 <div class="collapse" id="euler02">
-  <div class="well well-sm">4613732</div>
+  <div class="answer-value">4613732</div>
 </div>
 
 <hr/>
@@ -82,11 +82,11 @@ return primes.maximum(Long::compare);
  [jFunc](https://github.com/drjoliv/jfunc) inlcudes a function that returns all the prime factors of a number [primeFactors(long num)](https://drjoliv.github.io/jfunc/drjoliv/jfunc/nums/Numbers.html#primeFactors-java.lang.Long-) and FList contains the method [maximum](https://drjoliv.github.io/jfunc/drjoliv/jfunc/foldable/Foldable.html#maximum-java.util.Comparator-) which returns the maximum number in a list. This makes the solution a nice two liner.
 
 [Complete Code](https://github.com/drjoliv/ProjectEulerSolutions/blob/master/src/main/java/drjoliv/euler/Euler03.java) |
-<a type="button" data-toggle="collapse" data-target="#euler03" aria-expanded="false" aria-controls="euler03">
+<button type="button" class="btn btn-outline-success btn-sm answer-toggle" data-bs-toggle="collapse" data-bs-target="#euler03" aria-expanded="false" aria-controls="euler03">
 Answer
-</a>
+</button>
 <div class="collapse" id="euler03">
-  <div class="well well-sm">6857</div>
+  <div class="answer-value">6857</div>
 </div>
 
 <hr/>
@@ -126,11 +126,11 @@ The [For(F1&lt;A, ? extends Monad&lt;FList.μ, A&gt;&gt;, F2&lt;A, B, ? extends 
 ```
 
 [Complete Code](https://github.com/drjoliv/ProjectEulerSolutions/blob/master/src/main/java/drjoliv/euler/Euler04.java) |
-<a type="button" data-toggle="collapse" data-target="#euler04" aria-expanded="false" aria-controls="euler04">
+<button type="button" class="btn btn-outline-success btn-sm answer-toggle" data-bs-toggle="collapse" data-bs-target="#euler04" aria-expanded="false" aria-controls="euler04">
 Answer
-</a>
+</button>
 <div class="collapse" id="euler04">
-  <div class="well well-sm">906609</div>
+  <div class="answer-value">906609</div>
 </div>
 
 <hr/>
@@ -144,10 +144,9 @@ Answer
     return range(1L,20L).foldr(Longs::lcm,1L);
 ```
 
-[Complete Code](https://github.com/drjoliv/ProjectEulerSolutions/blob/master/src/main/java/drjoliv/euler/Euler05.java) |<a type="button" data-toggle="collapse" data-target="#euler05" aria-expanded="false" aria-controls="euler05">
+[Complete Code](https://github.com/drjoliv/ProjectEulerSolutions/blob/master/src/main/java/drjoliv/euler/Euler05.java) | <button type="button" class="btn btn-outline-success btn-sm answer-toggle" data-bs-toggle="collapse" data-bs-target="#euler05" aria-expanded="false" aria-controls="euler05">
 Answer
-</a>
+</button>
 <div class="collapse" id="euler05">
-  <div class="well well-sm">232792560</div>
+  <div class="answer-value">232792560</div>
 </div>
-
